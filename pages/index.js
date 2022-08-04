@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Heading from "../components/Heading";
+import Switch from "../components/Switch";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -73,7 +74,9 @@ I believe we need to research, prototype, test and refine the design for any int
                         >
                             Works
                         </Heading>
-                        <div>dsdsds</div>
+                        <div>
+                            <Switch />
+                        </div>
                     </div>
                 </section>
                 <h1 className="text-7xl">
