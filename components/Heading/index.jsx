@@ -1,7 +1,3 @@
-import React from 'react';
-
-// import { Container } from './styles';
-
 function Heading({as, children, className, id}) {
 
     if(as === 'h1') {
