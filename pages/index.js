@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
+import Card from "../components/Card";
 import Heading from "../components/Heading";
 import Switch from "../components/Switch";
 import styles from "../styles/Home.module.css";
@@ -21,7 +22,7 @@ export default function Home() {
 
             <header className="md:grid grid-cols-14 gap-5 my-5">
                 <h1 className="col-start-2 col-span-5 tracking-[.15rem] text-white/60">
-                    <b>ALAN</b> VASCONCELOS {workType}
+                    <b>ALAN</b> VASCONCELOS
                 </h1>
             </header>
 
@@ -82,6 +83,9 @@ I believe we need to research, prototype, test and refine the design for any int
                                 onChange={(workType) => setWorkType(workType)}
                             />
                         </div>
+                    </div>
+                    <div className="flex col-start-2 col-span-12">
+                        <Card></Card>
                     </div>
                 </section>
             </main>
