@@ -4,3 +4,30 @@
 .wrapper a:hover img{
     opacity: .16;
 }
+
+.wrapper {
+    transition: .4s;
+    /* clip-path: circle(100%); */
+}
+.wrapper.hide {
+    animation-name: hidecard;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.wrapper.show {
+    animation-name: showcard;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hidecard {
+    0% {clip-path: circle(100%);}
+    50% { clip-path: circle(0%);}
+    100% {position: absolute; clip-path: circle(0%);}
+  }
+@keyframes showcard {
+    0% {position: absolute; clip-path: circle(0%);}
+    50% {position: relative; clip-path: circle(0%);}
+    50% { clip-path: circle(100%);}
+    
+  }
