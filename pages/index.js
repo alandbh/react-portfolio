@@ -1,12 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import Card from "../components/Card";
+import Card from "../../components/Card";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
 import Heading from "../components/Heading";
 import Switch from "../components/Switch";
-import styles from "../styles/Home.module.css";
 
 export default function Home() {
     const [workType, setWorkType] = useState("all");
@@ -21,8 +19,6 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-
-            {/* <Header /> */}
 
             <main className="mt-[100px]">
                 <div className="md:grid grid-cols-14 gap-5">
@@ -87,7 +83,7 @@ I believe we need to research, prototype, test and refine the design for any int
                         <Card
                             title="Google Cloud"
                             tags="UX Analysis"
-                            href="contact"
+                            href="work/google-cloud"
                             image="port-t-fundacaobradesco.jpg"
                             filter={workType}
                         />
@@ -129,26 +125,6 @@ I believe we need to research, prototype, test and refine the design for any int
                     </div>
                 </section>
             </main>
-
-            {/* <footer className="mt-32 mb-20 flex flex-1 items-center flex-col text-white/60 ">
-                <p>Built with React, Next.Js, and Tailwindcss</p>
-                <p className="">
-                    <a
-                        href="https://github.com/alandbh/react-portfolio"
-                        className="underline flex items-center gap-3 opacity-60 hover:opacity-100 text-white"
-                    >
-                        <Image
-                            width={24}
-                            height={24}
-                            src="/icon-github.svg"
-                            alt=""
-                            className=""
-                        />{" "}
-                        Source code
-                    </a>
-                </p>
-            </footer> */}
-
             <Footer />
         </div>
     );
