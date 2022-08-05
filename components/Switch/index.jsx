@@ -2,12 +2,13 @@ import { useState } from 'react';
 import styles from './Switch.module.css'
 
 
-function Switch() {
+function Switch({onChange}) {
 
     const [option, setOption] = useState('all');
 
     function handleOnChange(ev) {
         setOption(ev.target.value)
+        onChange(ev.target.value)
     }
 
     const classObj = {
@@ -21,7 +22,7 @@ function Switch() {
     <>
         
     <div className="wrapper flex border border-white/60 h-8 rounded-full relative">
-        <div className={`bubble z-0 transition duration-150 bg-white/60 rounded-full w-[90px] top-[2px] h-[26px] absolute ${classObj[option]}`}></div>
+        <div className={`bubble z-0 transition duration-200 bg-white/60 rounded-full w-[90px] top-[2px] h-[26px] absolute ${classObj[option]}`}></div>
         <div className="container flex w-72 justify-between items-center font-bold z-10  text-xs leading-8 uppercase text-white/60">
             <label 
                 className='flex items-center justify-center grow cursor-pointer'

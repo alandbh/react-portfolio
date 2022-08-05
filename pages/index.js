@@ -1,10 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
+import { useState } from "react";
 import Heading from "../components/Heading";
 import Switch from "../components/Switch";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+    const [workType, setWorkType] = useState("all");
+
     return (
         <div>
             <Head>
@@ -18,7 +21,7 @@ export default function Home() {
 
             <header className="md:grid grid-cols-14 gap-5 my-5">
                 <h1 className="col-start-2 col-span-5 tracking-[.15rem] text-white/60">
-                    <b>ALAN</b> VASCONCELOS
+                    <b>ALAN</b> VASCONCELOS {workType}
                 </h1>
             </header>
 
@@ -75,7 +78,9 @@ I believe we need to research, prototype, test and refine the design for any int
                             Works
                         </Heading>
                         <div>
-                            <Switch />
+                            <Switch
+                                onChange={(workType) => setWorkType(workType)}
+                            />
                         </div>
                     </div>
                 </section>
