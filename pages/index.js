@@ -37,7 +37,7 @@ export default function Home() {
                     </h2>
                 </div>
                 <section className="bio md:grid md:grid-cols-14 gap-5 mt-20">
-                    <div className="col-span-2 col-start-2 mt-12">
+                    <div className="col-span-2 col-start-2 mt-11">
                         <Image
                             src="/photo.jpg"
                             alt="Vercel Alan's photo"
@@ -65,9 +65,9 @@ I believe we need to research, prototype, test and refine the design for any int
                             as="h3"
                             className="text-white/50 mb-5 mt-10 text-xs"
                         >
-                            Client Experience
+                            Expertise
                         </Heading>
-                        <p>{`Google Cloud, Banco do Brasil, Coca-Cola, Fundação Bradesco, Beam Suntory, PwC`}</p>
+                        <p>{`Research, Usability, Accessibility, e-Gov, UX Evaluation, Prototyping`}</p>
                     </div>
                 </section>
 
@@ -132,7 +132,24 @@ I believe we need to research, prototype, test and refine the design for any int
                 </section>
             </main>
 
-            <footer className={styles.footer}></footer>
+            <footer className="mt-40 mb-20 flex flex-1 items-center flex-col text-white/60 ">
+                <p>Built with React, Next.Js, and Tailwindcss</p>
+                <p className="">
+                    <a
+                        href="https://github.com/alandbh/react-portfolio"
+                        className="underline flex items-center gap-3 opacity-60 hover:opacity-100 text-white"
+                    >
+                        <Image
+                            width={24}
+                            height={24}
+                            src="/icon-github.svg"
+                            alt=""
+                            className=""
+                        />{" "}
+                        Source code
+                    </a>
+                </p>
+            </footer>
         </div>
     );
 }
