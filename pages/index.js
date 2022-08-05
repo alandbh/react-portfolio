@@ -28,7 +28,7 @@ export default function Home() {
 
             <main className="mt-[100px]">
                 <div className="md:grid grid-cols-14 gap-5">
-                    <h2 className="hero col-start-2 col-span-8 text-7xl text-white/80">
+                    <h2 className="hero col-start-2 col-span-8 text-7xl text-white/60">
                         Believe in the{" "}
                         <b>
                             <u>cleverness</u>
@@ -43,6 +43,7 @@ export default function Home() {
                             alt="Vercel Alan's photo"
                             width={200}
                             height={200}
+                            className="opacity-50"
                         />
                     </div>
                     <div className="col-span-6 text-white/80">
@@ -84,8 +85,49 @@ I believe we need to research, prototype, test and refine the design for any int
                             />
                         </div>
                     </div>
-                    <div className="flex col-start-2 col-span-12">
-                        <Card></Card>
+                    <div className="col-start-2 mt-16 col-span-12 grid md:grid-cols-3 grid-cols-2">
+                        <Card
+                            title="Google Cloud"
+                            tags="UX Analysis"
+                            href="contact"
+                            image="port-t-fundacaobradesco.jpg"
+                        />
+                        <Card
+                            title="Google Cloud"
+                            tags="UX Analysis"
+                            href="contact"
+                            image="port-t-fundacaobradesco.jpg"
+                        />
+                        <Card
+                            title="Google Cloud"
+                            tags="UX Analysis"
+                            href="contact"
+                            image="port-t-fundacaobradesco.jpg"
+                        />
+                        <Card
+                            title="Google Cloud"
+                            tags="UX Analysis"
+                            href="contact"
+                            image="port-t-fundacaobradesco.jpg"
+                        />
+                        <Card
+                            title="Google Cloud"
+                            tags="UX Analysis"
+                            href="contact"
+                            image="port-t-fundacaobradesco.jpg"
+                        />
+                        <Card
+                            title="Google Cloud"
+                            tags="UX Analysis"
+                            href="contact"
+                            image="port-t-fundacaobradesco.jpg"
+                        />
+                        <Card
+                            title="Google Cloud"
+                            tags="UX Analysis"
+                            href="contact"
+                            image="port-t-fundacaobradesco.jpg"
+                        />
                     </div>
                 </section>
             </main>
