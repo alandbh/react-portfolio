@@ -3,6 +3,7 @@ import Image from "next/image";
 import Heading from "../../components/Heading";
 import { useRouter } from "next/router";
 import { PageData } from "../../components/Content/PageData";
+import Footer from "../../components/Footer";
 
 const Works = (props) => {
     const router = useRouter();
@@ -95,7 +96,7 @@ const Works = (props) => {
                         <div
                             className={`${
                                 section.color_class || "bg-gray-100"
-                            } col-start-2 col-span-12 md:grid grid-cols-12 py-14`}
+                            } col-start-2 col-span-12 md:grid grid-cols-12 py-20`}
                         >
                             <div className="col-start-2 col-span-5 flex flex-col gap-11">
                                 <Heading as={"h4"} className="text-4xl">
@@ -103,7 +104,12 @@ const Works = (props) => {
                                 </Heading>
                                 <div>
                                     {section.text.map((p, i) => (
-                                        <p key={i}>{p}</p>
+                                        <p
+                                            dangerouslySetInnerHTML={{
+                                                __html: p,
+                                            }}
+                                            key={i}
+                                        ></p>
                                     ))}
                                 </div>
                             </div>
@@ -119,6 +125,8 @@ const Works = (props) => {
                         </div>
                     </section>
                 ))}
+
+                <Footer />
             </div>
         );
     } else {
