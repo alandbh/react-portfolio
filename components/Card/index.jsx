@@ -30,6 +30,7 @@ function Card({ tags, title, href, image, className, filter }) {
                     <Image
                         className="z-0 transition duration-300 opacity-10"
                         layout="fill"
+                        objectFit="cover"
                         src={`/${image}`}
                         alt=""
                     />
