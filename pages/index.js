@@ -77,7 +77,7 @@ I believe we need to research, prototype, test and refine the design for any int
                             as="h1"
                             className="text-4xl font-light text-white/50"
                         >
-                            Works
+                            Work
                         </Heading>
                         <div>
                             <Switch
