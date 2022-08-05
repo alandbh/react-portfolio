@@ -2,6 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 import Card from "../components/Card";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 import Heading from "../components/Heading";
 import Switch from "../components/Switch";
 import styles from "../styles/Home.module.css";
@@ -20,11 +22,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <header className="md:grid grid-cols-14 gap-5 my-5">
-                <h1 className="col-start-2 col-span-5 tracking-[.15rem] text-white/60">
-                    <b>ALAN</b> VASCONCELOS
-                </h1>
-            </header>
+            {/* <Header /> */}
 
             <main className="mt-[100px]">
                 <div className="md:grid grid-cols-14 gap-5">
@@ -132,7 +130,7 @@ I believe we need to research, prototype, test and refine the design for any int
                 </section>
             </main>
 
-            <footer className="mt-40 mb-20 flex flex-1 items-center flex-col text-white/60 ">
+            {/* <footer className="mt-32 mb-20 flex flex-1 items-center flex-col text-white/60 ">
                 <p>Built with React, Next.Js, and Tailwindcss</p>
                 <p className="">
                     <a
@@ -149,7 +147,9 @@ I believe we need to research, prototype, test and refine the design for any int
                         Source code
                     </a>
                 </p>
-            </footer>
+            </footer> */}
+
+            <Footer />
         </div>
     );
 }
