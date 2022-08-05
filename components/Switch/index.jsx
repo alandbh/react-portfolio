@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import styles from './Switch.module.css'
 
 
 function Switch({onChange}) {
@@ -12,9 +11,9 @@ function Switch({onChange}) {
     }
 
     const classObj = {
-        all: 'translate-x-[2px] w-[88px]',
-        ux: 'translate-x-[90px] w-[88px]',
-        front: 'translate-x-[174px] w-[112px]'
+        all: 'translate-x-[2px] w-[80px]',
+        ux: 'translate-x-[78px] w-[75px]',
+        front: 'translate-x-[152px] w-[102px]'
     }
 
     
@@ -23,7 +22,7 @@ function Switch({onChange}) {
         
     <div className="wrapper flex border border-white/60 h-8 rounded-full relative">
         <div className={`bubble z-0 transition duration-200 bg-white/60 rounded-full w-[90px] top-[2px] h-[26px] absolute ${classObj[option]}`}></div>
-        <div className="container flex w-72 justify-between items-center font-bold z-10  text-xs leading-8 uppercase text-white/60">
+        <div className="container flex w-64 justify-between items-center font-bold z-10  text-xs leading-8 uppercase text-white/60">
             <label 
                 className='flex items-center justify-center grow cursor-pointer'
             >
