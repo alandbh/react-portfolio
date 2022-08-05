@@ -93,38 +93,32 @@ I believe we need to research, prototype, test and refine the design for any int
                             image="port-t-fundacaobradesco.jpg"
                         />
                         <Card
-                            title="Google Cloud"
-                            tags="UX Analysis"
+                            title="PwC"
+                            tags="UX Audit, UX Research, Prototyping"
                             href="contact"
                             image="port-t-fundacaobradesco.jpg"
                         />
                         <Card
-                            title="Google Cloud"
-                            tags="UX Analysis"
+                            title="Fundação Bradesco"
+                            tags="UX Research, Wireflow, Prototyping"
                             href="contact"
                             image="port-t-fundacaobradesco.jpg"
                         />
                         <Card
-                            title="Google Cloud"
-                            tags="UX Analysis"
+                            title="Banco do Brasil"
+                            tags="ExD Consulting, Workshop"
                             href="contact"
                             image="port-t-fundacaobradesco.jpg"
                         />
                         <Card
-                            title="Google Cloud"
-                            tags="UX Analysis"
+                            title="Heuristic Collector"
+                            tags="UX, UI, Front-end"
                             href="contact"
                             image="port-t-fundacaobradesco.jpg"
                         />
                         <Card
-                            title="Google Cloud"
-                            tags="UX Analysis"
-                            href="contact"
-                            image="port-t-fundacaobradesco.jpg"
-                        />
-                        <Card
-                            title="Google Cloud"
-                            tags="UX Analysis"
+                            title="IRIS BH"
+                            tags="UX, UI, Front-end"
                             href="contact"
                             image="port-t-fundacaobradesco.jpg"
                         />
