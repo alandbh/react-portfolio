@@ -4,10 +4,18 @@ import Heading from "../../components/Heading";
 import { useRouter } from "next/router";
 import { PageData } from "../../components/Content/PageData";
 import Footer from "../../components/Footer";
+import Link from "next/link";
+
+const pagesList = Object.keys(PageData);
 
 const Works = (props) => {
     const router = useRouter();
     const { slug } = router.query;
+
+    const nextWorkSlug = pagesList[pagesList.indexOf(slug) + 1] || null;
+    const previousWorkSlug = pagesList[pagesList.indexOf(slug) - 1] || null;
+
+    console.log("next", nextWorkSlug);
 
     const routes = [
         "google-cloud",
@@ -125,6 +133,29 @@ const Works = (props) => {
                         </div>
                     </section>
                 ))}
+
+                <div>
+                    {previousWorkSlug ? (
+                        <Link href={`/work/${previousWorkSlug}`}>
+                            <a>
+                                <h5>PREVIOUS WORK</h5>
+                                <p>{PageData[previousWorkSlug].title}</p>
+                            </a>
+                        </Link>
+                    ) : (
+                        "The last prev"
+                    )}
+                    {nextWorkSlug ? (
+                        <Link href={`/work/${nextWorkSlug}`}>
+                            <a>
+                                <h5>NEXT WORK</h5>
+                                <p>{PageData[nextWorkSlug].title}</p>
+                            </a>
+                        </Link>
+                    ) : (
+                        "The last next"
+                    )}
+                </div>
 
                 <Footer />
             </div>
