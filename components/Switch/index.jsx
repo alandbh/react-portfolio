@@ -11,9 +11,9 @@ function Switch({onChange}) {
     }
 
     const classObj = {
-        all: 'translate-x-[2px] w-[80px]',
-        ux: 'translate-x-[78px] w-[75px]',
-        front: 'translate-x-[152px] w-[102px]'
+        all: 'translate-x-[2px] w-[60px]',
+        ux: 'translate-x-[62px] w-[83px]',
+        front: 'translate-x-[144px] w-[110px]'
     }
 
     
@@ -34,7 +34,7 @@ function Switch({onChange}) {
                     checked={option === 'all'} 
                     onChange={(ev)=> handleOnChange(ev)} 
                 />
-                <span className={option === 'all' ? 'text-color-base/100' : ''}>See All</span>
+                <span className={option === 'all' ? 'text-color-base/100' : ''}>All</span>
             </label>
             
             <label 
