@@ -9,7 +9,7 @@ export const google_cloud = {
         `The research was done during November 20th to 30th, 2021`,
     ],
     access: "https://bit.ly/3cVWmGI",
-    featured_image: "port-featured-google-cloud.png",
+    featured_image: "port-featured-google-cloud.svg",
     sections: [
         {
             title: "My role",
@@ -28,24 +28,31 @@ export const google_cloud = {
             image: "port-sec2-google-cloud.svg",
         },
         {
-            title: "ttt",
-            text: [`aa`, `aa`],
+            title: "Use Cases",
+            text: [
+                `For each actor, I created a set of tasks in order to walk us through the audit. This way we can make a sharper evaluation without lost any scenario.`,
+            ],
             image: "port-sec3-google-cloud.png",
+            color_class: "bg-white",
         },
         {
-            title: "ttt",
-            text: [`aa`, `aa`],
+            title: "The Heuristics",
+            text: [
+                `Each category is based on a stage of a purchase journey, starting from the search and identification of the product to the need for support.`,
+            ],
             image: "port-sec4-google-cloud.png",
+            color_class: "bg-gray-100",
         },
         {
-            title: "ttt",
-            text: [`aa`, `aa`],
+            title: "The result",
+            text: [
+                `As a result of the study, Google Cloud Brasil organized a big event at which all the retailer's IT directors were invited. At this event, we presented all the results, and all the improvement opportunities as well.`,
+                `After that, an article was published in Think With Google portal.`,
+                `Click in the link below to see the article.`,
+                `<a class="underline hover:text-gray-800" href="https://bit.ly/3cVWmGI">Article in Think With Google</a>`,
+            ],
             image: "port-sec5-google-cloud.png",
-        },
-        {
-            title: "ttt",
-            text: [`aa`, `aa`],
-            image: "port-t-fundacaobradesco.jpg",
+            color_class: "bg-white",
         },
     ],
 };
