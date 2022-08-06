@@ -65,7 +65,12 @@ const Works = (props) => {
                             Project
                         </Heading>
                         {PageData[slug].project?.map((paragraph, index) => (
-                            <p key={index}>{paragraph}</p>
+                            <p
+                                dangerouslySetInnerHTML={{
+                                    __html: paragraph,
+                                }}
+                                key={index}
+                            ></p>
                         ))}
 
                         <Heading
