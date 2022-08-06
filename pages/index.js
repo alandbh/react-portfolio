@@ -10,6 +10,8 @@ import { PageData } from "../components/Content/PageData";
 export default function Home() {
     const [workType, setWorkType] = useState("all");
 
+    const slugs = Object.keys(PageData);
+
     return (
         <div>
             <Head>
@@ -80,48 +82,16 @@ I believe we need to research, prototype, test and refine the design for any int
                         </div>
                     </div>
                     <div className="col-start-2 mt-16 col-span-12 grid md:grid-cols-3 grid-cols-2">
-                        <Card
-                            title="Google Cloud"
-                            tags="UX Analysis"
-                            href="work/google-cloud"
-                            image="port-t-fundacaobradesco.jpg"
-                            filter={workType}
-                        />
-                        <Card
-                            title="PwC"
-                            tags="UX Audit, UX Research, Prototyping"
-                            href="contact"
-                            image="port-t-fundacaobradesco.jpg"
-                            filter={workType}
-                        />
-                        <Card
-                            title="Fundação Bradesco"
-                            tags="UX Research, Wireflow, Prototyping"
-                            href="contact"
-                            image="port-t-fundacaobradesco.jpg"
-                            filter={workType}
-                        />
-                        <Card
-                            title="Banco do Brasil"
-                            tags="ExD Consulting, Workshop"
-                            href="contact"
-                            image="port-t-fundacaobradesco.jpg"
-                            filter={workType}
-                        />
-                        <Card
-                            title="Heuristic Collector"
-                            tags="UX, UI, Front-end"
-                            href="contact"
-                            image="port-t-fundacaobradesco.jpg"
-                            filter={workType}
-                        />
-                        <Card
-                            title="IRIS BH"
-                            tags="UX, UI, Front-end"
-                            href="contact"
-                            image="port-t-fundacaobradesco.jpg"
-                            filter={workType}
-                        />
+                        {slugs.map((slug, index) => (
+                            <Card
+                                key={index}
+                                title={PageData[slug].client}
+                                tags={PageData[slug].role}
+                                href={`work/${slug}`}
+                                image={`port-t-${slug}.jpg`}
+                                filter={workType}
+                            />
+                        ))}
                     </div>
                 </section>
             </main>
