@@ -46,19 +46,34 @@ const Works = (props) => {
                 </main>
 
                 <section className="bio md:grid md:grid-cols-14 gap-5 mt-20">
-                    <div className="col-span-4 col-start-2 text-white/80">
-                        <Heading as="h3" className="text-white/50 mb-5 text-xs">
-                            Year
-                        </Heading>
-                        <p>{PageData[slug].year}</p>
-                        <Heading as="h3" className="text-white/50 mb-5 text-xs">
-                            Client
-                        </Heading>
-                        <p>{PageData[slug].client}</p>
-                        <Heading as="h3" className="text-white/50 mb-5 text-xs">
-                            Role
-                        </Heading>
-                        <p>{PageData[slug].role}</p>
+                    <div className="col-span-4 col-start-2 text-white/80 grid md:block grid-cols-2">
+                        <div>
+                            <Heading
+                                as="h3"
+                                className="text-white/50 mb-5 text-xs"
+                            >
+                                Year
+                            </Heading>
+                            <p>{PageData[slug].year}</p>
+                        </div>
+                        <div>
+                            <Heading
+                                as="h3"
+                                className="text-white/50 mb-5 text-xs"
+                            >
+                                Client
+                            </Heading>
+                            <p>{PageData[slug].client}</p>
+                        </div>
+                        <div className="col-span-2">
+                            <Heading
+                                as="h3"
+                                className="text-white/50 mb-5 text-xs"
+                            >
+                                Role
+                            </Heading>
+                            <p>{PageData[slug].role}</p>
+                        </div>
                     </div>
                     <div className="col-span-6 text-white/80">
                         <Heading as="h3" className="text-white/50 mb-5 text-xs">
@@ -90,8 +105,8 @@ const Works = (props) => {
                     </div>
                 </section>
 
-                <section className="md:grid md:grid-cols-14 gap-5 mt-20">
-                    <figure className="max-h-96 min-h-[580px] col-start-2 col-span-12 relative">
+                <section className="md:grid md:grid-cols-14 mt-20">
+                    <figure className="max-h-96 min-h-[580px] col-start-2 col-span-12 relative mx-[2px]">
                         <Image
                             src={"/" + PageData[slug].featured_image}
                             layout="fill"
@@ -109,7 +124,7 @@ const Works = (props) => {
                         <div
                             className={`${
                                 section.color_class || "bg-gray-100"
-                            } col-start-2 col-span-12 md:grid grid-cols-12 py-20`}
+                            } col-start-2 col-span-12 md:grid grid-cols-12 py-20 px-4 md:px-0`}
                         >
                             <div className="col-start-2 col-span-5 flex flex-col gap-11">
                                 <Heading as={"h4"} className="text-4xl">
@@ -140,7 +155,7 @@ const Works = (props) => {
                 ))}
 
                 <div className="grid grid-cols-14 mt-10">
-                    <div className="col-start-2 col-span-12 flex justify-between">
+                    <div className="col-start-2 col-span-12 flex justify-between gap-10">
                         {previousWorkSlug && (
                             <Link href={`/work/${previousWorkSlug}`}>
                                 <a className="opacity-50 hover:opacity-90 flex flex-col gap-10">
