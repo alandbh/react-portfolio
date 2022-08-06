@@ -15,19 +15,6 @@ const Works = (props) => {
     const nextWorkSlug = pagesList[pagesList.indexOf(slug) + 1] || null;
     const previousWorkSlug = pagesList[pagesList.indexOf(slug) - 1] || null;
 
-    console.log("next", nextWorkSlug);
-
-    const routes = [
-        "google-cloud",
-        "pwc",
-        "fundacao-bradesco",
-        "banco-do-brasil",
-        "heuristic-collector",
-        "iris-bh",
-    ];
-
-    console.log(router);
-
     if (PageData[slug] !== undefined) {
         return (
             <div>
