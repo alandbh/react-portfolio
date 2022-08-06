@@ -139,27 +139,46 @@ const Works = (props) => {
                     </section>
                 ))}
 
-                <div>
-                    {previousWorkSlug ? (
-                        <Link href={`/work/${previousWorkSlug}`}>
-                            <a>
-                                <h5>PREVIOUS WORK</h5>
-                                <p>{PageData[previousWorkSlug].title}</p>
-                            </a>
-                        </Link>
-                    ) : (
-                        "The last prev"
-                    )}
-                    {nextWorkSlug ? (
-                        <Link href={`/work/${nextWorkSlug}`}>
-                            <a>
-                                <h5>NEXT WORK</h5>
-                                <p>{PageData[nextWorkSlug].title}</p>
-                            </a>
-                        </Link>
-                    ) : (
-                        "The last next"
-                    )}
+                <div className="grid grid-cols-14 mt-10">
+                    <div className="col-start-2 col-span-12 flex justify-between">
+                        {previousWorkSlug && (
+                            <Link href={`/work/${previousWorkSlug}`}>
+                                <a className="opacity-50 hover:opacity-90 flex flex-col gap-10">
+                                    <h5 className="text-xs uppercase flex gap-4 items-center">
+                                        <Image
+                                            src={"/icon-arrow-left.svg"}
+                                            width={24}
+                                            height={24}
+                                            alt="Previous Work"
+                                        />{" "}
+                                        PREVIOUS WORK
+                                    </h5>
+                                    <p className="text-lg font-bold">
+                                        {PageData[previousWorkSlug].title}
+                                    </p>
+                                </a>
+                            </Link>
+                        )}
+                        {nextWorkSlug && (
+                            <Link href={`/work/${nextWorkSlug}`}>
+                                <a className="opacity-50 hover:opacity-90 flex flex-col gap-10 items-end ml-auto">
+                                    <h5 className="text-xs uppercase flex gap-4 items-center">
+                                        NEXT WORK
+                                        <Image
+                                            src={"/icon-arrow-left.svg"}
+                                            width={24}
+                                            height={24}
+                                            alt="Next Work"
+                                            className="rotate-180"
+                                        />{" "}
+                                    </h5>
+                                    <p className="text-lg font-bold">
+                                        {PageData[nextWorkSlug].title}
+                                    </p>
+                                </a>
+                            </Link>
+                        )}
+                    </div>
                 </div>
 
                 <Footer />
