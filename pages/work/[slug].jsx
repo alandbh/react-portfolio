@@ -39,6 +39,19 @@ const Works = (props) => {
 
                 <main className="mt-[100px]">
                     <div className="md:grid grid-cols-14 gap-5">
+                        <div className="col-start-2 col-span-12 ">
+                            <Link href={"/"}>
+                                <a className="flex items-center gap-5 opacity-50 hover:opacity-80">
+                                    <Image
+                                        src={"/icon-arrow-left.svg"}
+                                        width={36}
+                                        height={36}
+                                        alt="Back to Home"
+                                    />{" "}
+                                    BACK
+                                </a>
+                            </Link>
+                        </div>
                         <h2 className="hero font-light col-start-2 col-span-12 text-7xl text-white/60">
                             {PageData[slug].title}
                         </h2>
