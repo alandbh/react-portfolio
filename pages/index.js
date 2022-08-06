@@ -5,6 +5,7 @@ import Card from "../components/Card";
 import Footer from "../components/Footer";
 import Heading from "../components/Heading";
 import Switch from "../components/Switch";
+import { PageData } from "../components/Content/PageData";
 
 export default function Home() {
     const [workType, setWorkType] = useState("all");
