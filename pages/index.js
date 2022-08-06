@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
-import Card from "../../components/Card";
+import Card from "../components/Card";
 import Footer from "../components/Footer";
 import Heading from "../components/Heading";
 import Switch from "../components/Switch";
