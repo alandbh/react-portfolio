@@ -8,6 +8,10 @@ import Link from "next/link";
 
 const pagesList = Object.keys(PageData);
 
+function isVideo(filename) {
+    return filename.endsWith(".mp4") || filename.endsWith(".webm");
+}
+
 const Works = (props) => {
     const router = useRouter();
     const { slug } = router.query;
@@ -123,14 +127,23 @@ const Works = (props) => {
                     >
                         <div
                             className={`${
-                                section.color_class || "bg-gray-100"
+                                section.bg_color_class || "bg-gray-100"
                             } col-start-2 col-span-12 md:grid grid-cols-12 py-20 px-4 md:px-0`}
                         >
                             <div className="col-start-2 col-span-5 flex flex-col gap-11">
-                                <Heading as={"h4"} className="text-4xl">
+                                <Heading
+                                    as={"h4"}
+                                    className={`${
+                                        section.text_color_class || "color"
+                                    } text-4xl`}
+                                >
                                     {section.title}
                                 </Heading>
-                                <div>
+                                <div
+                                    className={`${
+                                        section.text_color_class || "color"
+                                    }`}
+                                >
                                     {section.text.map((p, i) => (
                                         <p
                                             dangerouslySetInnerHTML={{
@@ -142,14 +155,40 @@ const Works = (props) => {
                                 </div>
                             </div>
                             <div className="col-start-8 col-span-4 relative">
-                                <picture>
-                                    <source
-                                        srcSet={"/" + section.image}
-                                        type="image/webp"
-                                    />
-                                    <img src={"/" + section.image} alt="" />
-                                </picture>
+                                {isVideo(section.image) ? (
+                                    <div className="w-[270px]">
+                                        <video playsinline autoPlay muted loop>
+                                            <source
+                                                src={"/" + section.image}
+                                                type="video/webm"
+                                            />
+                                        </video>
+                                    </div>
+                                ) : (
+                                    <picture>
+                                        <source
+                                            srcSet={"/" + section.image}
+                                            type="image/webp"
+                                        />
+                                        <img src={"/" + section.image} alt="" />
+                                    </picture>
+                                )}
                             </div>
+
+                            {section.image_full && (
+                                <div className="col-span-12 relative">
+                                    <picture>
+                                        <source
+                                            srcSet={"/" + section.image_full}
+                                            type="image/webp"
+                                        />
+                                        <img
+                                            src={"/" + section.image_full}
+                                            alt=""
+                                        />
+                                    </picture>
+                                </div>
+                            )}
                         </div>
                     </section>
                 ))}
