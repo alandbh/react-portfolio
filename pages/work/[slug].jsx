@@ -9,7 +9,9 @@ import Link from "next/link";
 const pagesList = Object.keys(PageData);
 
 function isVideo(filename) {
-    return filename.endsWith(".mp4") || filename.endsWith(".webm");
+    return filename === undefined
+        ? false
+        : filename.endsWith(".mp4") || filename.endsWith(".webm");
 }
 
 const Works = (props) => {
@@ -154,7 +156,7 @@ const Works = (props) => {
                                     ))}
                                 </div>
                             </div>
-                            <div className="col-start-8 col-span-4 relative">
+                            <div className="col-start-8 col-span-5 relative">
                                 {isVideo(section.image) ? (
                                     <div className="w-[270px]">
                                         <video playsinline autoPlay muted loop>
@@ -176,7 +178,7 @@ const Works = (props) => {
                             </div>
 
                             {section.image_full && (
-                                <div className="col-span-12 relative">
+                                <div className="col-span-12 relative mt-10">
                                     <picture>
                                         <source
                                             srcSet={"/" + section.image_full}

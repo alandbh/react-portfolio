@@ -18,7 +18,7 @@ export const google_cloud = {
                 `Each category is based on a stage of a purchase journey, starting from the search and identification of the product to the need for support.`,
             ],
             image: "port-sec1-google-cloud.svg",
-            color_class: "bg-gray-200",
+            bg_color_class: "bg-gray-200",
         },
         {
             title: "Actors",
@@ -33,7 +33,7 @@ export const google_cloud = {
                 `For each actor, I created a set of tasks in order to walk us through the audit. This way we can make a sharper evaluation without lost any scenario.`,
             ],
             image: "port-sec3-google-cloud.png",
-            color_class: "bg-white",
+            bg_color_class: "bg-white",
         },
         {
             title: "The Heuristics",
@@ -41,7 +41,7 @@ export const google_cloud = {
                 `Each category is based on a stage of a purchase journey, starting from the search and identification of the product to the need for support.`,
             ],
             image: "port-sec4-google-cloud.png",
-            color_class: "bg-gray-100",
+            bg_color_class: "bg-gray-100",
         },
         {
             title: "The result",
@@ -52,7 +52,7 @@ export const google_cloud = {
                 `<a class="underline hover:text-gray-800" href="https://bit.ly/3cVWmGI">Article in Think With Google</a>`,
             ],
             image: "port-sec5-google-cloud.png",
-            color_class: "bg-white",
+            bg_color_class: "bg-white",
         },
     ],
 };

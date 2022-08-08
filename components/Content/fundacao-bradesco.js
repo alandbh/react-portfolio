@@ -4,57 +4,54 @@ export const fundacao_bradesco = {
     client: "Fundação Bradesco",
     role: "UX Research, Wireflow, Prototyping",
     project: [
-        `<p>The Goal is to build awareness and demand for PwC in the ESG space, and ultimately help our clients navigate their ESG journey by creating an experience that gives people the confidence in PwC for ESG.</p>
+        `<p>Given the current pandemic scenario where students need to study from home, Fundação Bradesco identified two needs:
+        Provide educational content free of charge to students;
+        Provide good experience on mobile devices.</p>
 
-        <p>What is an innovation sprint?</p>
-        
-        <p>It's a four-phase process with a lean, cross-disciplinary team that uses design thinking to create ideas at speed.</p>`,
+        <p>Based on the survey carried out with students, Fundação Bradesco asked R/GA for an MVP for an app to integrate all current platforms and mitigate the problems mapped.</p>`,
     ],
-    access: "https://bit.ly/3cVWmGI",
-    featured_image: "port-featured-pwc.jpg",
+    access: "https://linktr.ee/alandbh",
+    featured_image: "port-featured-fundacao-bradesco.png",
     sections: [
         {
             title: "My role",
             text: [
-                `Heuristic UX Evaluation for E-commerce. We defined 38 heuristics for e-commerce based on a full customer journey, divided into 8 categories.`,
-                `Each category is based on a stage of a purchase journey, starting from the search and identification of the product to the need for support.`,
+                `My job was to understand the requirements, create the user flow and prototype the most incipient ideas for the three personas: Student, Parent, and Teacher.`,
+                `I also acted as UX director coordinating deliveries and auditing UI work.`,
+                `<p>All the UI screens were made by <a href="https://www.linkedin.com/in/isabelakempinas/?originalSubdomain=br">Isabela Kempinas.</a></p>`,
             ],
-            image: "port-sec1-google-cloud.svg",
-            color_class: "bg-gray-200",
+            image: "port-sec1-fundacao-bradesco.svg",
+            bg_color_class: "bg-gray-100",
         },
         {
-            title: "Actors",
-            text: [
-                `Two different user profiles who will try to purchase the product on the marketplace websites.`,
-            ],
-            image: "port-sec2-google-cloud.svg",
+            title: "Prototyping",
+            text: [`Earlier prototypes for the three personas.`],
+            image: "port-sec2-fundacao-bradesco.png",
+            image_full: "port-sec2a-fundacao-bradesco.png",
+            bg_color_class: "bg-white",
         },
         {
-            title: "Use Cases",
-            text: [
-                `For each actor, I created a set of tasks in order to walk us through the audit. This way we can make a sharper evaluation without lost any scenario.`,
-            ],
-            image: "port-sec3-google-cloud.png",
-            color_class: "bg-white",
+            title: "User Flow",
+            text: [`Three different paths for three different profiles.`],
+            image_full: "port-sec3-fundacao-bradesco.png",
+            bg_color_class: "bg-[#F1F4F7]",
         },
         {
-            title: "The Heuristics",
+            title: "Visual UI",
             text: [
-                `Each category is based on a stage of a purchase journey, starting from the search and identification of the product to the need for support.`,
+                `Here, I worked in XD direction/audit of the UI designs.`,
+                `<p>All the UI screens were made by <a class="underline" href="https://www.linkedin.com/in/isabelakempinas/?originalSubdomain=br">Isabela Kempinas.</a></p>`,
             ],
-            image: "port-sec4-google-cloud.png",
-            color_class: "bg-gray-100",
+            image: "port-sec4-fundacao-bradesco.png",
+            bg_color_class: "bg-[#B3D1ED]",
         },
         {
             title: "The result",
             text: [
-                `As a result of the study, Google Cloud Brasil organized a big event at which all the retailer's IT directors were invited. At this event, we presented all the results, and all the improvement opportunities as well.`,
-                `After that, an article was published in Think With Google portal.`,
-                `Click in the link below to see the article.`,
-                `<a class="underline hover:text-gray-800" href="https://bit.ly/3cVWmGI">Article in Think With Google</a>`,
+                `<p>You can download the app from <a class="underline hover:text-gray-900" href="https://play.google.com/store/apps/details?id=bradesco.fundacao&hl=en_US&gl=US">Google Play</a>, and <a class="underline hover:text-gray-900" href="https://apps.apple.com/br/app/funda%C3%A7%C3%A3o-bradesco/id1573814864">App Store</a></p>`,
             ],
-            image: "port-sec5-google-cloud.png",
-            color_class: "bg-white",
+            image: "app-store.svg",
+            bg_color_class: "bg-white",
         },
     ],
 };
