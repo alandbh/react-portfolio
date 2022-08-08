@@ -158,7 +158,11 @@ const Works = (props) => {
                             </div>
                             <div className="col-start-8 col-span-5 relative">
                                 {isVideo(section.image) ? (
-                                    <div className="w-[270px]">
+                                    <div
+                                        className={`${
+                                            section.video_classname || ""
+                                        }  w-[270px]`}
+                                    >
                                         <video playsinline autoPlay muted loop>
                                             <source
                                                 src={"/" + section.image}
@@ -167,13 +171,22 @@ const Works = (props) => {
                                         </video>
                                     </div>
                                 ) : (
-                                    <picture>
-                                        <source
-                                            srcSet={"/" + section.image}
-                                            type="image/webp"
-                                        />
-                                        <img src={"/" + section.image} alt="" />
-                                    </picture>
+                                    <div
+                                        className={
+                                            section.image_classname || ""
+                                        }
+                                    >
+                                        <picture>
+                                            <source
+                                                srcSet={"/" + section.image}
+                                                type="image/webp"
+                                            />
+                                            <img
+                                                src={"/" + section.image}
+                                                alt=""
+                                            />
+                                        </picture>
+                                    </div>
                                 )}
                             </div>
 
