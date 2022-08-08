@@ -4,57 +4,34 @@ export const iris = {
     client: "Institute for Research on Internet & Society (IRIS)",
     role: "UX, UI, Front-end",
     project: [
-        `<p>The Goal is to build awareness and demand for PwC in the ESG space, and ultimately help our clients navigate their ESG journey by creating an experience that gives people the confidence in PwC for ESG.</p>
+        `<p>The project consists of creating the new portal of The Institute for Research on Internet & Society (IRIS), with a focus on a good experience for end users and for researchers who are part of the institution.</p>
 
-        <p>What is an innovation sprint?</p>
-        
-        <p>It's a four-phase process with a lean, cross-disciplinary team that uses design thinking to create ideas at speed.</p>`,
+        <p>The biggest challenge here is to organize the various types of content, such as Researcher Profile, Events, Blog, Papers, Newsletter, and Podcasts.</p>`,
     ],
-    access: "https://bit.ly/3cVWmGI",
-    featured_image: "port-featured-pwc.jpg",
+    access: "https://irisbh.com.br/en/",
+    featured_image: "port-featured-iris.png",
     sections: [
         {
             title: "My role",
             text: [
-                `Heuristic UX Evaluation for E-commerce. We defined 38 heuristics for e-commerce based on a full customer journey, divided into 8 categories.`,
-                `Each category is based on a stage of a purchase journey, starting from the search and identification of the product to the need for support.`,
+                `The design process includes Concept, Information Architecture, Wireframing, and tge UI Design.`,
+                `Wireframing was a crucial step for moving forward with the designs. There were plenty of business requirements to be addressed.`,
             ],
-            image: "port-sec1-google-cloud.svg",
-            color_class: "bg-gray-200",
-        },
-        {
-            title: "Actors",
-            text: [
-                `Two different user profiles who will try to purchase the product on the marketplace websites.`,
-            ],
-            image: "port-sec2-google-cloud.svg",
-        },
-        {
-            title: "Use Cases",
-            text: [
-                `For each actor, I created a set of tasks in order to walk us through the audit. This way we can make a sharper evaluation without lost any scenario.`,
-            ],
-            image: "port-sec3-google-cloud.png",
-            color_class: "bg-white",
-        },
-        {
-            title: "The Heuristics",
-            text: [
-                `Each category is based on a stage of a purchase journey, starting from the search and identification of the product to the need for support.`,
-            ],
-            image: "port-sec4-google-cloud.png",
-            color_class: "bg-gray-100",
+            image: "port-sec1-iris.png",
+            image_full: "port-sec1a-iris.png",
+            bg_color_class: "bg-[#f2f2f2]",
         },
         {
             title: "The result",
             text: [
-                `As a result of the study, Google Cloud Brasil organized a big event at which all the retailer's IT directors were invited. At this event, we presented all the results, and all the improvement opportunities as well.`,
-                `After that, an article was published in Think With Google portal.`,
-                `Click in the link below to see the article.`,
-                `<a class="underline hover:text-gray-800" href="https://bit.ly/3cVWmGI">Article in Think With Google</a>`,
+                `I also worked on the front-end of all the pages, which are fully responsive.`,
+                `You can take alook here:`,
+                `<a class="underline hover:text-gray-800" href="https://irisbh.com.br/en/">IRIS Website</a>`,
             ],
-            image: "port-sec5-google-cloud.png",
-            color_class: "bg-white",
+            image: "port-sec2b-iris.webm",
+            image_full: "port-sec2a-iris.png",
+            bg_color_class: "bg-[#ffa202]",
+            text_color_class: "text-white",
         },
     ],
 };
