@@ -44,6 +44,7 @@ export const fundacao_bradesco = {
             ],
             image: "port-sec4-fundacao-bradesco.png",
             bg_color_class: "bg-[#B3D1ED]",
+            text_color_class: "text-[#444444]",
         },
         {
             title: "The result",
