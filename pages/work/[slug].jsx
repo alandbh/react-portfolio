@@ -101,12 +101,16 @@ const Works = (props) => {
                             Access
                         </Heading>
                         <p>
-                            <a
-                                className="text-white/60 hover:text-white/90 underline"
-                                href={PageData[slug].access}
-                            >
-                                {PageData[slug].access}
-                            </a>
+                            {PageData[slug].access.startsWith("http") ? (
+                                <a
+                                    className="text-white/60 hover:text-white/90 underline"
+                                    href={PageData[slug].access}
+                                >
+                                    {PageData[slug].access}
+                                </a>
+                            ) : (
+                                "n/a"
+                            )}
                         </p>
                     </div>
                 </section>
