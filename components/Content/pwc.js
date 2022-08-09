@@ -4,13 +4,12 @@ export const pwc = {
     client: "PwC",
     role: "UX Audit, UX Research, Prototyping",
     project: [
-        `<p>The Goal is to build awareness and demand for PwC in the ESG space, and ultimately help our clients navigate their ESG journey by creating an experience that gives people the confidence in PwC for ESG.</p>
+        `<p>The Goal is to build awareness and demand for PwC in the ESG space, and ultimately help PwC's clients navigate their ESG journey by creating an experience that gives people the confidence in PwC for ESG.</p>
 
-        <p>What is an innovation sprint?</p>
-        
-        <p>It's a four-phase process with a lean, cross-disciplinary team that uses design thinking to create ideas at speed.</p>`,
+        <p>To achieve these goals, PwC asked R/GA to create a platform MVP in which customers themselves could walk through a flow entering some data and thus see a dashboard that indicates points for improvement.</p>
+        `,
     ],
-    access: "https://bit.ly/3cVWmGI",
+    access: "n/a",
     featured_image: "port-featured-pwc.jpg",
     sections: [
         {
@@ -24,9 +23,10 @@ export const pwc = {
             bg_color_class: "bg-gray-200",
         },
         {
-            title: "Five steps",
+            title: "What is an innovation sprint?",
             text: [
-                `The most effective innovation sprints happen when we prioritize creativity and collaboration.`,
+                `
+                <p>It's a five-step process with a lean, cross-disciplinary team that uses design thinking to create ideas at speed.</p>`,
             ],
             image: "port-sec2-pwc.svg",
             image_full: "port-sec2a-pwc.svg",
@@ -53,7 +53,6 @@ export const pwc = {
             title: "Mid-Fi Wireframes",
             text: [
                 `Medium fidelity prototypes in order to show the customer the main idea, using real data.`,
-                `<a class="underline hover:text-gray-800" href="https://bit.ly/3cVWmGI">Article in Think With Google</a>`,
             ],
             image: "port-sec5-pwc.webm",
             image_full: "port-sec5a-pwc.png",
