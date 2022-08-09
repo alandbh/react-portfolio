@@ -5,7 +5,6 @@ export const pwc = {
     role: "UX Audit, UX Research, Prototyping",
     project: [
         `<p>The Goal is to build awareness and demand for PwC in the ESG space, and ultimately help PwC's clients navigate their ESG journey by creating an experience that gives people the confidence in PwC for ESG.</p>
-
         <p>To achieve these goals, PwC asked R/GA to create a platform MVP in which customers themselves could walk through a flow entering some data and thus see a dashboard that indicates points for improvement.</p>
         `,
     ],
