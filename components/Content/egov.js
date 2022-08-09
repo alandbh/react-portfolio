@@ -2,59 +2,67 @@ export const egov = {
     title: "e-Gov",
     year: "2021",
     client: "Government Agencies",
-    role: "UX Research, Front-end, Prototyping",
+    role: "UX Research, Mentoring, Front-end, Prototyping",
     project: [
-        `<p>The Goal is to build awareness and demand for PwC in the ESG space, and ultimately help our clients navigate their ESG journey by creating an experience that gives people the confidence in PwC for ESG.</p>
-
-        <p>What is an innovation sprint?</p>
-        
-        <p>It's a four-phase process with a lean, cross-disciplinary team that uses design thinking to create ideas at speed.</p>`,
+        `<p>Between 2013 and 2017 I worked as a UX mentor in government institutions, helping them to implement Electronic Government products and services, following the Brazilian guidelines for usability and accessibility.</p>
+        `,
     ],
-    access: "https://bit.ly/3cVWmGI",
-    featured_image: "port-featured-pwc.jpg",
+    access: "n/a",
+    featured_image: "port-featured-egov.jpg",
     sections: [
         {
             title: "My role",
             text: [
-                `Heuristic UX Evaluation for E-commerce. We defined 38 heuristics for e-commerce based on a full customer journey, divided into 8 categories.`,
-                `Each category is based on a stage of a purchase journey, starting from the search and identification of the product to the need for support.`,
+                `From Usability Tests to Style Guides, I've done a lot of work in the areas of usability, accessibility. There were many workshops, consultancies, mentorships, even courses.`,
+                `Below, I show some of these works.`,
             ],
-            image: "port-sec1-google-cloud.svg",
-            color_class: "bg-gray-200",
+            image: "port-sec1-egov.png",
+            bg_color_class: "bg-[#E3660C]",
+            text_color_class: "text-white/90",
         },
         {
-            title: "Actors",
+            title: "Brazilian Usability Booklet",
             text: [
-                `Two different user profiles who will try to purchase the product on the marketplace websites.`,
+                `In 2010 I participated in the elaboration of the Brazilian usability booklet, during the initial phase of my Master's degree.`,
+                `This booklet aims to guide the entire public sector in the implementation of digital products for citizens.`,
+                `You can read or download the booklet here:`,
+                `<a class="underline" href="https://epwg.governoeletronico.gov.br/cartilha-usabilidade.html">https://epwg.governoeletronico.gov.br/cartilha-usabilidade.html</a>`,
             ],
-            image: "port-sec2-google-cloud.svg",
+            image: "port-sec2-egov.png",
+            bg_color_class: "bg-[#EAB725]",
+            text_color_class: "text-black/70",
         },
         {
-            title: "Use Cases",
+            title: "State of Minas Gerais Purchasing Portal",
             text: [
-                `For each actor, I created a set of tasks in order to walk us through the audit. This way we can make a sharper evaluation without lost any scenario.`,
+                `In 2017, the State of Minas Gerais began the process of modernizing its Purchasing Portal. Due to time and budget issues, we use a well-established language - Material Design by Google.`,
+                `In this way, the development team can use a widely used library - Material UI (based on React Js)`,
+                `You can take a look in:`,
+                `<a class="underline" href="https://www1.compras.mg.gov.br/n/catalogo/grupo/">https://www1.compras.mg.gov.br/n/catalogo/grupo/</a>`,
             ],
-            image: "port-sec3-google-cloud.png",
-            color_class: "bg-white",
+            image: "port-sec3-egov.png",
+            image_full: "port-sec3a-egov.png",
+            bg_color_class: "bg-white",
         },
         {
-            title: "The Heuristics",
+            title: "Citizen Centered Design",
             text: [
-                `Each category is based on a stage of a purchase journey, starting from the search and identification of the product to the need for support.`,
+                `This is a paper, published in IxDA's <b>Interaction South America</b> - 2014, as part of a broader study that aims to create a design management model, to support the Brazilian public sector in developing interactive products aimed at the citizen-user.`,
+                `You can download the paper or watch the lecture here:`,
+                `<a class="underline" href="http://isa.ixda.org/2014/design-centrado-no-cidadao/">http://isa.ixda.org/2014/design-centrado-no-cidadao/</a>`,
             ],
-            image: "port-sec4-google-cloud.png",
-            color_class: "bg-gray-100",
+            image: "port-sec4-egov.jpg",
+            bg_color_class: "bg-[#49AEA9]",
+            text_color_class: "text-white/90",
         },
         {
-            title: "The result",
+            title: "It's all about people!",
             text: [
-                `As a result of the study, Google Cloud Brasil organized a big event at which all the retailer's IT directors were invited. At this event, we presented all the results, and all the improvement opportunities as well.`,
-                `After that, an article was published in Think With Google portal.`,
-                `Click in the link below to see the article.`,
-                `<a class="underline hover:text-gray-800" href="https://bit.ly/3cVWmGI">Article in Think With Google</a>`,
+                `Here are some photos from workshops; accessibility/usability tests; and Cardsortings that I made for clients like Banco do Brasil, Ministry of Health, and the Federal Government.`,
             ],
-            image: "port-sec5-google-cloud.png",
-            color_class: "bg-white",
+            image_full: "port-featured-egov.jpg",
+            image_full_stretch: true,
+            bg_color_class: "bg-white",
         },
     ],
 };

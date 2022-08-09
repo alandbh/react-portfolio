@@ -195,8 +195,14 @@ const Works = (props) => {
                             </div>
 
                             {section.image_full && (
-                                <div className="col-span-12 relative mt-10">
-                                    <picture>
+                                <div className="col-span-12 relative mt-12 flex justify-end">
+                                    <picture
+                                        className={
+                                            Boolean(section.image_full_stretch)
+                                                ? "w-[100%]"
+                                                : ""
+                                        }
+                                    >
                                         <source
                                             srcSet={"/" + section.image_full}
                                             type="image/webp"
@@ -204,6 +210,13 @@ const Works = (props) => {
                                         <img
                                             src={"/" + section.image_full}
                                             alt=""
+                                            className={
+                                                Boolean(
+                                                    section.image_full_stretch
+                                                )
+                                                    ? "w-[100%]"
+                                                    : ""
+                                            }
                                         />
                                     </picture>
                                 </div>

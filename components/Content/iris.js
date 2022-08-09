@@ -31,7 +31,7 @@ export const iris = {
             image: "port-sec2b-iris.webm",
             image_full: "port-sec2a-iris.png",
             bg_color_class: "bg-[#ffa202]",
-            text_color_class: "text-white",
+            text_color_class: "text-black/80",
         },
     ],
 };
