@@ -9,7 +9,7 @@ export const PageData = {
     "google-cloud": google_cloud,
     pwc,
     "fundacao-bradesco": fundacao_bradesco,
-    egov,
     rga,
     iris,
+    egov,
 };

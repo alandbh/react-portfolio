@@ -19,6 +19,7 @@ export const iris = {
             ],
             image: "port-sec1-iris.png",
             image_full: "port-sec1a-iris.png",
+            image_full_stretch: true,
             bg_color_class: "bg-[#f2f2f2]",
         },
         {
@@ -30,6 +31,7 @@ export const iris = {
             ],
             image: "port-sec2b-iris.webm",
             image_full: "port-sec2a-iris.png",
+            image_full_stretch: true,
             bg_color_class: "bg-[#ffa202]",
             text_color_class: "text-black/80",
         },

@@ -55,6 +55,7 @@ export const pwc = {
             ],
             image: "port-sec5-pwc.webm",
             image_full: "port-sec5a-pwc.png",
+            image_full_stretch: true,
             bg_color_class: "bg-[#f4bb23]",
             text_color_class: "text-gray-800",
             video_classname: "w-[100%]",
