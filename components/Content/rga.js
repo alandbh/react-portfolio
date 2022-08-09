@@ -1,14 +1,16 @@
 export const rga = {
     title: "R/GA's Heuristic Collector",
-    year: "2021",
+    year: "2022",
     client: "R/GA",
     role: "Prototyping, UI, Front-end",
     project: [
-        `<p>The Goal is to build awareness and demand for PwC in the ESG space, and ultimately help our clients navigate their ESG journey by creating an experience that gives people the confidence in PwC for ESG.</p>
-
-        <p>What is an innovation sprint?</p>
-        
-        <p>It's a four-phase process with a lean, cross-disciplinary team that uses design thinking to create ideas at speed.</p>`,
+        `<p>DISCLAIMER: <br>For privacy reasons, <b>all retailer data shown here is dummy.</b></p>`,
+        `Spreadsheets are great for storing and visualizing data.`,
+        `It turns out that when we need to run a heuristic evaluation, using a smartphone, tablet or even a laptop, it is quite difficult to manually enter data into these spreadsheets. Especially when there are many columns.`,
+        `Because of that, I created and developed a specific app (mobile and desktop) so that the UX evaluators could collect and save the observed data during the analysis.`,
+        `The app (in MVP) allows you not only to insert the heuristic score, but also to insert comments, paste a link with screenshots, and even insert extra findings that can be classified as Good, Bad or Neutral.`,
+        `Now the data is exposed in a much easier to read way. In addition, entering the collected data has become much simpler and frictionless.`,
+        `Another advantage is that the color classification of extra finds is now fully automated. All of this cut data collection time by almost half.`,
     ],
     access: "https://bit.ly/3cVWmGI",
     featured_image: "port-featured-pwc.jpg",
