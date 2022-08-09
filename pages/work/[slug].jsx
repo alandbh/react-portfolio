@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { PageData } from "../../components/Content/PageData";
 import Footer from "../../components/Footer";
 import Link from "next/link";
+import Page404 from "../404";
 
 const pagesList = Object.keys(PageData);
 
@@ -167,7 +168,7 @@ const Works = (props) => {
                                             section.video_classname || ""
                                         }  w-[270px]`}
                                     >
-                                        <video playsinline autoPlay muted loop>
+                                        <video playsInline autoPlay muted loop>
                                             <source
                                                 src={"/" + section.image}
                                                 type="video/webm"
@@ -271,11 +272,7 @@ const Works = (props) => {
             </div>
         );
     } else {
-        return (
-            <>
-                <div>ERROR 404</div>
-            </>
-        );
+        return <Page404 />;
     }
 };
 

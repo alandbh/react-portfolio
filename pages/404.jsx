@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 // import { Container } from './styles';
 
-function page404() {
+function Page404() {
     return (
         <div>
             <Head>
@@ -40,6 +40,7 @@ function page404() {
                         <video
                             style={{ filter: "brightness(0.87) blur(1px)" }}
                             autoPlay
+                            playsInline
                             muted
                             loop
                         >
@@ -67,4 +68,4 @@ function page404() {
     );
 }
 
-export default page404;
+export default Page404;
