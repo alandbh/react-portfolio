@@ -40,7 +40,7 @@ export default class MyDocument extends Document {
                     <link rel="manifest" href="/site.webmanifest"></link>
                 </Head>
                 <body className="bg-color-base text-white/90 flex flex-col items-center">
-                    <div className="wrapper-all max-w-[1800px] px-5 md:px-0 ">
+                    <div className="wrapper-all w-full max-w-[1800px] px-5 md:px-0 ">
                         <Header />
                         <Main />
                     </div>
