@@ -165,8 +165,9 @@ const Works = (props) => {
                                 {isVideo(section.image) ? (
                                     <div
                                         className={`${
-                                            section.video_classname || ""
-                                        }  w-[270px]`}
+                                            section.video_classname ||
+                                            "w-[270px]"
+                                        }  `}
                                     >
                                         <video playsInline autoPlay muted loop>
                                             <source
@@ -272,7 +273,7 @@ const Works = (props) => {
             </div>
         );
     } else {
-        return <Page404 />;
+        return "Loading";
     }
 };
 
