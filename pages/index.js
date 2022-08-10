@@ -5,6 +5,7 @@ import Card from "../components/Card";
 import Footer from "../components/Footer";
 import Heading from "../components/Heading";
 import Switch from "../components/Switch";
+import Typing from "../components/Typing";
 import { PageData } from "../components/Content/PageData";
 
 export default function Home() {
@@ -26,10 +27,8 @@ export default function Home() {
                 <div className="md:grid grid-cols-14 gap-5">
                     <h2 className="hero col-start-2 col-span-8 text-7xl text-white/60">
                         Believe in the{" "}
-                        <b>
-                            <u>cleverness</u>
-                        </b>{" "}
-                        behind the interface.
+                        <Typing words="inteligence, strategy"></Typing> behind
+                        the interface.
                     </h2>
                 </div>
                 <section className="bio md:grid md:grid-cols-14 gap-5 mt-20">
