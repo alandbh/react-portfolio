@@ -25,10 +25,11 @@ export default function Home() {
 
             <main className="mt-[100px]">
                 <div className="md:grid grid-cols-14 gap-5">
-                    <h2 className="hero col-start-2 col-span-8 text-7xl text-white/60">
+                    <h2 className="hero col-start-2 col-span-8 text-7xl text-white/40">
                         Believe in the{" "}
-                        <Typing words="inteligence, strategy"></Typing> behind
-                        the interface.
+                        <Typing words="inteligence, strategy"></Typing>
+                        <br />
+                        behind the interface.
                     </h2>
                 </div>
                 <section className="bio md:grid md:grid-cols-14 gap-5 mt-20">

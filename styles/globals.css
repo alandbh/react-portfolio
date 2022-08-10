@@ -29,6 +29,10 @@ p {
   margin-bottom: 1.5rem;
 }
 
+.Typewriter {
+  display: inline;
+}
+
 /* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
