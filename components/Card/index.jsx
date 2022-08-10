@@ -25,7 +25,7 @@ function Card({ tags, title, href, image, className, filter }) {
         >
             <Link href={`/${href}`}>
                 <a
-                    className={`${className} flex transition duration-300 relative box-border text-xs text-white/60 hover:text-white/90  h-44 border hover:border-white/60 border-white/30 min-w-[200px] p-5`}
+                    className={`${className} flex transition duration-300 relative box-border text-xs text-white/60 hover:text-white/90  h-44 border hover:border-white/60 border-white/30  p-5`}
                 >
                     <Image
                         className="z-0 transition duration-300 opacity-10"
@@ -35,7 +35,12 @@ function Card({ tags, title, href, image, className, filter }) {
                         alt=""
                     />
                     <div className="relative z-1 flex justify-between flex-col">
-                        <Heading className={"font-bold text-lg"} as={"h2"}>
+                        <Heading
+                            className={
+                                "font-bold leading-6 text-[20px] md:text-lg"
+                            }
+                            as={"h2"}
+                        >
                             {title}
                         </Heading>
                         <p className="m-0">{tags}</p>

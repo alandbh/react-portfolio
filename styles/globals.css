@@ -29,6 +29,10 @@ p {
   margin-bottom: 1.5rem;
 }
 
+a {
+  word-wrap:break-word;
+}
+
 .Typewriter {
   display: inline;
 }

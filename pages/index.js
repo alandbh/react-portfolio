@@ -25,10 +25,14 @@ export default function Home() {
 
             <main className="mt-[100px]">
                 <div className="md:grid grid-cols-14 gap-5">
-                    <h2 className="hero col-start-2 col-span-8 text-7xl text-white/40">
+                    <h2 className="hero col-start-2 col-span-8 md:text-7xl text-5xl text-white/40">
                         Believe in the{" "}
-                        <Typing words="inteligence, strategy"></Typing>
-                        <br />
+                        <span className="block md:inline">
+                            <Typing words="inteligence, strategy"></Typing>
+                        </span>
+                        <span className="hidden md:inline">
+                            <br />
+                        </span>
                         behind the interface.
                     </h2>
                 </div>
@@ -71,7 +75,7 @@ I believe we need to research, prototype, test and refine the design for any int
                     <div className="flex justify-between items-center col-start-2 col-span-12 works-feed border-dotted border-t-2 border-white/50 pt-5">
                         <Heading
                             as="h1"
-                            className="text-4xl font-light text-white/50"
+                            className="md:text-4xl text-xl font-light text-white/50"
                         >
                             Work
                         </Heading>
@@ -81,7 +85,7 @@ I believe we need to research, prototype, test and refine the design for any int
                             />
                         </div>
                     </div>
-                    <div className="col-start-2 mt-16 col-span-12 grid md:grid-cols-3 grid-cols-2">
+                    <div className="col-start-2 mt-16 col-span-12 grid grid-cols-1 md:grid-cols-3">
                         {slugs.map((slug, index) => (
                             <Card
                                 key={index}

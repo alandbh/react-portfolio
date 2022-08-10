@@ -227,7 +227,7 @@ const Works = (props) => {
                     </section>
                 ))}
 
-                <div className="grid grid-cols-14 mt-10">
+                <div className="md:grid grid-cols-14 mt-10">
                     <div className="col-start-2 col-span-12 flex justify-between gap-10">
                         {previousWorkSlug && (
                             <Link href={`/work/${previousWorkSlug}`}>
@@ -241,7 +241,7 @@ const Works = (props) => {
                                         />{" "}
                                         PREVIOUS WORK
                                     </h5>
-                                    <p className="text-lg font-bold">
+                                    <p className="text-sm md:text-lg font-bold">
                                         {PageData[previousWorkSlug].title}
                                     </p>
                                 </a>
@@ -260,7 +260,7 @@ const Works = (props) => {
                                             className="rotate-180"
                                         />{" "}
                                     </h5>
-                                    <p className="text-lg font-bold">
+                                    <p className="md:text-lg font-bold">
                                         {PageData[nextWorkSlug].title}
                                     </p>
                                 </a>
