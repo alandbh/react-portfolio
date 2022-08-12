@@ -1,8 +1,10 @@
 export const egov = {
     title: "e-Gov",
-    year: "2021",
+    year: "2011 to 2017",
     client: "Government Agencies",
     role: "UX Research, Mentoring, Front-end, Prototyping",
+    company_name: `Synergia`,
+    company_url: `https://www.synergia.dcc.ufmg.br`,
     project: [
         `<p>Between 2013 and 2017 I worked as a UX mentor in government institutions, helping them to implement Electronic Government products and services, following the Brazilian guidelines for usability and accessibility.</p>
         `,

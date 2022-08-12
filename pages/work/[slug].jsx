@@ -6,6 +6,7 @@ import { PageData } from "../../components/Content/PageData";
 import Footer from "../../components/Footer";
 import Link from "next/link";
 import Page404 from "../404";
+import Header from "../../components/Header";
 
 const pagesList = Object.keys(PageData);
 
@@ -31,9 +32,11 @@ const Works = (props) => {
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
 
-                <main className="mt-[100px]">
+                <Header />
+
+                <main className="mt-8">
                     <div className="md:grid grid-cols-14 gap-5">
-                        <div className="col-start-2 col-span-12 ">
+                        <div className="col-start-2 col-span-12 mb-16">
                             <Link href={"/"}>
                                 <a className="flex items-center gap-5 opacity-50 hover:opacity-80">
                                     <Image
@@ -81,8 +84,30 @@ const Works = (props) => {
                             </Heading>
                             <p>{PageData[slug].role}</p>
                         </div>
+                        {PageData[slug].company_name && (
+                            <div className="col-span-2">
+                                <Heading
+                                    as="h3"
+                                    className="text-white/50 mb-5 text-xs"
+                                >
+                                    Company
+                                </Heading>
+                                <p>
+                                    {PageData[slug].company_url ? (
+                                        <a
+                                            className="underline hover:text-white/90 text-white/50"
+                                            href={PageData[slug].company_url}
+                                        >
+                                            {PageData[slug].company_name}
+                                        </a>
+                                    ) : (
+                                        PageData[slug].company_name
+                                    )}
+                                </p>
+                            </div>
+                        )}
                     </div>
-                    <div className="col-span-6 text-white/80">
+                    <div className="col-span-6 md:col-span-6 text-white/80">
                         <Heading as="h3" className="text-white/50 mb-5 text-xs">
                             Project
                         </Heading>
@@ -117,7 +142,7 @@ const Works = (props) => {
                 </section>
 
                 <section className="md:grid md:grid-cols-14 mt-20">
-                    <figure className="max-h-96 min-h-[580px] col-start-2 col-span-12 relative mx-[2px]">
+                    <figure className="max-h-96 md:min-h-[580px] sm:min-h-[380px] min-h-[280px] col-start-2 col-span-12 relative mx-[2px]">
                         <Image
                             src={"/" + PageData[slug].featured_image}
                             layout="fill"
@@ -260,7 +285,7 @@ const Works = (props) => {
                                             className="rotate-180"
                                         />{" "}
                                     </h5>
-                                    <p className="md:text-lg font-bold">
+                                    <p className="md:text-lg font-bold text-right">
                                         {PageData[nextWorkSlug].title}
                                     </p>
                                 </a>

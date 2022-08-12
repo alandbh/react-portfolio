@@ -41,7 +41,6 @@ export default class MyDocument extends Document {
                 </Head>
                 <body className="bg-color-base text-white/90 flex flex-col items-center">
                     <div className="wrapper-all w-full max-w-[1800px] px-5 md:px-0 ">
-                        <Header />
                         <Main />
                     </div>
                     <NextScript />

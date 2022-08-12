@@ -3,13 +3,15 @@ export const rga = {
     year: "2022",
     client: "R/GA",
     role: "Prototyping, UI, Front-end",
+    company_name: "R/GA",
+    company_url: "https://www.rga.com",
     project: [
         `<p>DISCLAIMER: <br>For privacy reasons, <b>all retailer data shown here is dummy.</b></p>`,
         `Spreadsheets are great for storing and visualizing data.`,
         `It turns out that when we need to run a heuristic evaluation, using a smartphone, tablet or even a laptop, it is quite difficult to manually enter data into these spreadsheets. Especially when there are many columns.`,
         `Because of that, I created and developed a specific app (mobile and desktop) so that the UX evaluators could collect and save the observed data during the analysis.`,
         `The app (in MVP) allows you not only to insert the heuristic score, but also to insert comments, paste a link with screenshots, and even insert extra findings that can be classified as Good, Bad or Neutral.`,
-        `Now the data is exposed in a much easier to read way. In addition, entering the collected data has become much simpler and frictionless.`,
+
         `Another advantage is that the color classification of extra finds is now fully automated. All of this cut data collection time by almost half.`,
     ],
     access: "https://heuristic-scores-form.vercel.app",
@@ -34,13 +36,13 @@ export const rga = {
             bg_color_class: "bg-white",
             image: "port-sec2-rga.svg",
             image_full: "port-sec2a-rga.png",
-            image_classname: "w-52",
+            image_full_stretch: true,
+            image_classname: "w-52 mx-auto",
         },
         {
             title: "The Web App",
             text: [
-                `I built the web application using Next.Js / React as the front end.`,
-                `Before migrating the data to the spreadsheet, the collected data was stored in MongoDB.`,
+                `Now the data is exposed in a much easier to read way. In addition, entering the collected data has become much simpler and frictionless. 😻`,
             ],
             image: "port-sec3-rga.webm",
             video_classname: "flex-1",
@@ -51,6 +53,9 @@ export const rga = {
             title: "The PWA",
             text: [
                 `For better user experience (or would it be designer experience? LoL), I turned the application into Progressive Web App (PWA), so it works offline too.`,
+                `<b>Tech Stack</b>`,
+                `I built the web application using Next.Js / React as the front end.`,
+                `Before migrating the data to the spreadsheet, the collected data was stored in MongoDB.`,
             ],
             image: "port-sec4-rga.png",
             bg_color_class: "bg-white",

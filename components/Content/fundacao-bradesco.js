@@ -2,6 +2,8 @@ export const fundacao_bradesco = {
     title: "Fundação Bradesco Mobile App",
     year: "2021",
     client: "Fundação Bradesco",
+    company_name: "R/GA",
+    company_url: "https://www.rga.com",
     role: "UX Research, Wireflow, Prototyping",
     project: [
         `<p>Given the current pandemic scenario where students need to study from home, Fundação Bradesco identified two needs:
@@ -16,7 +18,7 @@ export const fundacao_bradesco = {
         {
             title: "My role",
             text: [
-                `My job was to understand the requirements, create the user flow and prototype the most incipient ideas for the three personas: Student, Parent, and Teacher.`,
+                `My job was to understand the requirements, create the <b>user flow</b> and prototype the most incipient ideas for the three personas: <b>Student, Parent, and Teacher.</b>`,
                 `I also acted as UX director coordinating deliveries and auditing UI work.`,
                 `<p>All the UI screens were made by <a href="https://www.linkedin.com/in/isabelakempinas/?originalSubdomain=br">Isabela Kempinas.</a></p>`,
             ],
@@ -25,7 +27,7 @@ export const fundacao_bradesco = {
         },
         {
             title: "Prototyping",
-            text: [`Earlier prototypes for the three personas.`],
+            text: [`Earlier lo-fi prototypes for the three personas.`],
             image: "port-sec2-fundacao-bradesco.png",
             image_full: "port-sec2a-fundacao-bradesco.png",
             bg_color_class: "bg-white",

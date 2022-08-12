@@ -1,8 +1,9 @@
 export const iris = {
     title: "IRIS's Website",
-    year: "2020",
+    year: "2019",
     client: "Institute for Research on Internet & Society (IRIS)",
     role: "UX, UI, Front-end",
+    company_name: "Personal project",
     project: [
         `<p>The project consists of creating the new portal of The Institute for Research on Internet & Society (IRIS), with a focus on a good experience for end users and for researchers who are part of the institution.</p>
 
@@ -14,7 +15,7 @@ export const iris = {
         {
             title: "My role",
             text: [
-                `The design process includes Concept, Information Architecture, Wireframing, and tge UI Design.`,
+                `The design process includes Concept, Information Architecture, Wireframing, and UI Design.`,
                 `Wireframing was a crucial step for moving forward with the designs. There were plenty of business requirements to be addressed.`,
             ],
             image: "port-sec1-iris.png",
@@ -25,7 +26,8 @@ export const iris = {
         {
             title: "The result",
             text: [
-                `I also worked on the front-end of all the pages, which are fully responsive.`,
+                `I also worked on the <b>front-end</b> of all the pages, which are fully responsive.`,
+                `The tech stack is: HTML5, CSS3, JS, and Wordpress`,
                 `You can take alook here:`,
                 `<a class="underline hover:text-gray-800" href="https://irisbh.com.br/en/">IRIS Website</a>`,
             ],

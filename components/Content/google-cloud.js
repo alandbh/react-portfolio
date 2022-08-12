@@ -3,6 +3,8 @@ export const google_cloud = {
     year: "2020 / 2021",
     client: "Google Cloud",
     role: "Analyst, Researcher",
+    company_name: "R/GA",
+    company_url: "https://www.rga.com",
     project: [
         `Looking at the major 25 retailers in Brazil, we aimed to find out how the overall user experience fared during the Black Friday period, comprising from the 20th to November 30th - both from a tech and user experience perspective.`,
         `Using these learnings, we were then able to understand how brands could improve the overall experience and also, how Google Cloud could be a partner in helping make those improvements happen.`,
