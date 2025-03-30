@@ -155,14 +155,24 @@ const Works = (props) => {
                 {PageData[slug].sections.map((section, index) => (
                     <section
                         key={index}
-                        className="md:grid md:grid-cols-14 mt-0 px-[2px] text-gray-500"
+                        className={
+                            "md:grid md:grid-cols-14 mt-0 px-[2px] text-gray-500" +
+                            " " +
+                            section.section_classname
+                        }
                     >
                         <div
                             className={`${
                                 section.bg_color_class || "bg-gray-100"
-                            } col-start-2 col-span-12 md:grid grid-cols-12 py-20 px-4 md:px-0`}
+                            } col-start-2 col-span-12 md:grid grid-cols-12 ${
+                                section.no_padding ? "py-0" : "py-20"
+                            } ${section.no_padding ? "px-0" : "px-4"} md:px-0`}
                         >
-                            <div className="col-start-2 col-span-5 flex flex-col gap-11">
+                            <div
+                                className={`col-start-2 col-span-5 ${
+                                    section.no_padding ? "hidden" : "flex"
+                                } flex-col gap-11`}
+                            >
                                 <Heading
                                     as={"h4"}
                                     className={`${
@@ -186,7 +196,11 @@ const Works = (props) => {
                                     ))}
                                 </div>
                             </div>
-                            <div className="col-start-8 col-span-5 relative">
+                            <div
+                                className={`col-start-8 col-span-5 relative justify-center md:justify-start ${
+                                    section.no_padding ? "hidden" : "flex"
+                                }`}
+                            >
                                 {isVideo(section.image) ? (
                                     <div
                                         className={`${
@@ -194,7 +208,15 @@ const Works = (props) => {
                                             "w-[270px]"
                                         }  `}
                                     >
-                                        <video playsInline autoPlay muted loop>
+                                        <video
+                                            playsInline
+                                            autoPlay
+                                            muted
+                                            loop
+                                            className={
+                                                section.image_radius || ""
+                                            }
+                                        >
                                             <source
                                                 src={"/" + section.image}
                                                 type="video/webm"
@@ -211,18 +233,29 @@ const Works = (props) => {
                                             <source
                                                 srcSet={"/" + section.image}
                                                 type="image/webp"
+                                                className={
+                                                    section.image_radius || ""
+                                                }
                                             />
                                             <img
                                                 src={"/" + section.image}
                                                 alt=""
+                                                className={
+                                                    section.image_radius || ""
+                                                }
                                             />
                                         </picture>
                                     </div>
                                 )}
                             </div>
 
-                            {section.image_full && (
-                                <div className="col-span-12 relative mt-12 flex justify-end">
+                            {section.image_full &&
+                            typeof section.image_full === "string" ? (
+                                <div
+                                    className={`col-span-12 relative ${
+                                        section.no_padding ? "mt-0" : "mt-12"
+                                    } flex justify-end`}
+                                >
                                     <picture
                                         className={
                                             Boolean(section.image_full_stretch)
@@ -244,6 +277,35 @@ const Works = (props) => {
                                                     ? "w-[100%]"
                                                     : ""
                                             }
+                                        />
+                                    </picture>
+                                </div>
+                            ) : (
+                                <div className="col-span-12 relative mt-12 flex justify-end">
+                                    <picture className="w-[100%] hidden md:block">
+                                        <source
+                                            srcSet={
+                                                "/" + section.image_full?.md
+                                            }
+                                            type="image/webp"
+                                        />
+                                        <img
+                                            src={"/" + section.image_full?.md}
+                                            alt=""
+                                            className="w-[100%]"
+                                        />
+                                    </picture>
+                                    <picture className="w-[100%] block md:hidden">
+                                        <source
+                                            srcSet={
+                                                "/" + section.image_full?.sm
+                                            }
+                                            type="image/webp"
+                                        />
+                                        <img
+                                            src={"/" + section.image_full?.sm}
+                                            alt=""
+                                            className="w-[100%]"
                                         />
                                     </picture>
                                 </div>
